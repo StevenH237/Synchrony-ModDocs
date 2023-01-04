@@ -1,0 +1,66 @@
+*Note: This page covers the settings nodes added by the mod. See [Settings](modules/Settings.md) for the Settings module or [Options](../../Options.md) for an end-user settings guide.*
+
+# Shared settings (Customize)
+**ES** represents entity-schema-altering settings.
+
+* `allowedFloors`: bitflag (flag `SwEnum.AllowedFloors`, default `SwEnum.FloorPresets.ALL_FLOORS`)
+* `bomb`: group (empty)
+* `charms`: group
+  * `charms.algorithm`: enum (`SwEnum.CharmsAlgorithm`, default `.ADD_ONE`)
+  * `charms.maxAdd`: number (`0-*`, default `1`)
+  * `charms.maxTotal`: number (`0-*`, default `5`)
+* `defaults`: group
+  * `defaults.action`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.body`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.feet`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.head`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.holster`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.ring`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.shield`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.shovel`: entity (default `ShovelBasic`)
+  * `defaults.spell`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.torch`: entity (default `Switcheroo_NoneItem`)
+  * `defaults.weapon`: entity (default `WeaponDagger`)
+* `dontGive`: group
+  * `dontGive.bannedItems`: **ES** bool (default `true`)
+  * `dontGive.components`: **ES** list.component (default `{}`)
+  * `dontGive.damageUps`: **ES** bool (default `true`)
+  * `dontGive.deadlyItems`: **ES** bool (default `true`)
+  * `dontGive.floatingItems`: **ES** bool (default `false`)
+  * `dontGive.goldItems`: **ES** enum (`SwEnum.DontGiveGold`, default `.DYNAMIC`)
+  * `dontGive.items`: **ES** list.entity (default `{}`)
+  * `dontGive.magicFood`: **ES** bool (default `true`)
+  * `dontGive.moveAmplifiers`: **ES** bool (default `true`)
+  * `dontGive.visionReducers`: **ES** bool (default `true`)
+* `dontTake`: group
+  * `dontTake.alwaysLabel`: label
+  * `dontTake.components`: **ES** list.component (default `{}`)
+  * `dontTake.componentsUnlessGiven`: **ES** list.component (default `{}`)
+  * `dontTake.crownOfGreed`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
+  * `dontTake.items`: **ES** list.entity (default `{}`)
+  * `dontTake.itemsUnlessGiven`: **ES** list.entity (default `{}`)
+  * `dontTake.locked`: **ES** enum (`SwEnum.DontTake`, default `.DONT_TAKE`)
+  * `dontTake.luckyCharm`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
+  * `dontTake.potion`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
+  * `dontTake.ringOfWonder`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
+  * `dontTake.unlessGivenLabel`: label
+* `generatorFallback`: bool (default `false`)
+* `generators`: list.component (default `{"Switcheroo_itemPoolSwitcheroo"})`
+* `guarantees`: bool (default `true`)
+* `replacement`: group
+  * `replacement.advancedEmptyChance`: percent (default `1`)
+  * `replacement.advancedEmptyMinSlots`: number (`0-*`, default `0`)
+  * `replacement.advancedFullMinSlots`: number (`0-*`, default `0`)
+  * `replacement.advancedFullReplaceChance`: percent (default `1`)
+  * `replacement.advancedFullSelectChance`: percent (default `1`)
+  * `replacement.advancedMaxItems`: number (`-1-*`, default `-1`)
+  * `replacement.advancedMaxSlots`: number (`-1-*`, default `-1`)
+  * `replacement.advancedMinItems`: number (`0-*`, default `0`)
+  * `replacement.advancedMinSlots`: number (`0-*`, default `0`)
+* `sellItems`: percent (default `0`)
+* `slots`: group
+  * `slots.allowed`: bitflag (flag `SwEnum.SlotsBitmask`, default `SwEnum.SlotPresets.ALL_SLOTS`)
+  * `slots.capacity`: number (`0-*`, default `3`)
+  * `slots.oneTime`: bitflag (flag `SwEnum.SlotsBitmask`, default `SwEnum.SlotPresets.NO_SLOTS`)
+  * `slots.reduce`: bool (default `true`)
+  * `slots.unlocked`: bitflag (flag `SwEnum.SlotsBitmask`, default `SwEnum.SlotPresets.NO_SLOTS`)
