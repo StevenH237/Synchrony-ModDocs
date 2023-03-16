@@ -17,7 +17,7 @@ Registers a submenu to be shown in MenuMod's menu container.
 
 Some remarks:
 
-If `name` is a string, it's evaluated every tick while ModMenu's container is open.
+If `name` is a function, it's evaluated every tick while ModMenu's container is open.
 
 If `id` isn't specified, it becomes equal to `menu`.
 
