@@ -23,6 +23,8 @@
   * `defaults.weapon`: entity (default `WeaponDagger`)
 * `dontGive`: group
   * `dontGive.bannedItems`: **ES** bool (default `true`)
+  * `dontGive.breakableShovels`: **ES** bool (default `true`)
+  * `dontGive.breakableWeapons`: **ES** bool (default `true`)
   * `dontGive.components`: **ES** list.component (default `{}`)
   * `dontGive.damageUps`: **ES** bool (default `true`)
   * `dontGive.deadlyItems`: **ES** bool (default `true`)
@@ -31,12 +33,14 @@
   * `dontGive.items`: **ES** list.entity (default `{}`)
   * `dontGive.magicFood`: **ES** bool (default `true`)
   * `dontGive.moveAmplifiers`: **ES** bool (default `true`)
+  * `dontGive.rhythmIgnoringItems`: **ES** bool (default `true`)
   * `dontGive.visionReducers`: **ES** bool (default `true`)
 * `dontTake`: group
   * `dontTake.alwaysLabel`: label
   * `dontTake.components`: **ES** list.component (default `{}`)
   * `dontTake.componentsUnlessGiven`: **ES** list.component (default `{}`)
   * `dontTake.crownOfGreed`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
+  * `dontTake.crystalShovel`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
   * `dontTake.items`: **ES** list.entity (default `{}`)
   * `dontTake.itemsUnlessGiven`: **ES** list.entity (default `{}`)
   * `dontTake.locked`: **ES** enum (`SwEnum.DontTake`, default `.DONT_TAKE`)
@@ -45,7 +49,7 @@
   * `dontTake.ringOfWonder`: **ES** enum (`SwEnum.DontTake`, default `.TAKE_IF_GIVEN`)
   * `dontTake.unlessGivenLabel`: label
 * `generatorFallback`: bool (default `false`)
-* `generators`: list.component (default `{"Switcheroo_itemPoolSwitcheroo"})`
+* `generators`: list.component (default `{"Switcheroo_itemPoolSwitcheroo"}`)
 * `guarantees`: bool (default `true`)
 * `replacement`: group
   * `replacement.advancedEmptyChance`: percent (default `1`)

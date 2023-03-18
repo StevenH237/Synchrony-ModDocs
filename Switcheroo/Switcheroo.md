@@ -6,4 +6,4 @@ Developers wishing to code with Switcheroo may wish to look at [modules](Switche
 
 It's [open-source on GitHub](https://github.com/StevenH237/Synchrony-Switcheroo)! You can [report problems or suggest features](https://github.com/StevenH237/Synchrony-Switcheroo/issues/new) there too.
 
-(Because I know I'm going to forget: This documentation is up-to-date with version 3.2.2 of Switcheroo.)
+This documentation is up-to-date with version 3.3.1 of Switcheroo.

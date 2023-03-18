@@ -21,10 +21,12 @@ There are no fields or constants on this component.
 
 It is not hardcoded to any entities. However, it is automatically assigned to or removed from items during an entity schema regeneration, depending on player-selected settings. The mod's default settings assign it to:
 
-* Any entity with the `itemIncomingDamageMultiplier` component.
+* Any entity with the `consumableIgnoreRhythmTemporarily` component.
 * Any entity with the `itemIncomingDamageIncrease` component.
+* Any entity with the `itemIncomingDamageMultiplier` component.
 * Any entity with the `itemMoveAmplifier` component.
 * Any entity with the `consumableHeal` component where `overheal = true`.
+* Any entity with the `itemConsumeOnIncomingDamage` component *and* either the `shovel` or `weapon` components.
 
 
 
@@ -49,10 +51,11 @@ This component contains the following fields:
 
 This component isn't hardcoded to any entities. However, it is automatically assigned to or removed from items during an entity schema regeneration, depending on player-selected settings. The mod's default settings assign it to:
 
-* The `HeadCrownGreed` entity: `{ unlessGiven = true }`
 * The `CharmLuck` entity: `{ unlessGiven = true }`
+* The `HeadCrownGreed` entity: `{ unlessGiven = true }`
 * The `Potion` entity: `{ unlessGiven = true }`
 * The `RingWonder` entity: `{ unlessGiven = true }`
+* The `ShovelCrystal` entity: `{ unlessGiven = true }`
 
 
 
@@ -61,6 +64,21 @@ This component links a player to their Switcheroo randomizer, to keep items more
 
 This component contains the following field:
 
-* `entity`: entityID, default `nil`.
+* `entity`: entityID.
 
-This component is, by default, given to all `playableCharacter` entities.
+This component is hardcoded to:
+
+* Any entity with the `controllable` component, but *not* the `Sync_possessable` component.
+
+
+
+# `Switcheroo_soulLinkItemGen`
+This component tracks item slots that are given items acros soul links, so that items are not repeatedly given.
+
+This component contains the following field:
+
+* `slots`: table, default `{}`. The keys of this table are slots that should be tracked and the values are [`SwEnum.SlotMark`](modules/Enum.md#SlotMark) constants representing whether items have been given in that slot.
+
+This component is hardcoded to:
+
+* Any entity with the `soulLinkInventory` component

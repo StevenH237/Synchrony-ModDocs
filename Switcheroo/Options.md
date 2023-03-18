@@ -44,11 +44,14 @@ These settings restrict what items the mod can give.
   * This entry has an option, "Allow while holding gold". If enabled, players that are holding gold when the floor starts may be given these items.
 * **Vision-reducing items**: Items that reduce the player's field of vision (e.g. Ring of Shadows).
 * **Floating items**: Items that cause players to float (e.g. Boots of Levitation). Unlike the others, these are allowed by default; the option is simply there to remove them.
+* **Rhythm-ignoring items**: Items that allow the player to temporarily ignore the rhythm (e.g. Heart Transplant).
+* **Breakable weapons**: Weapons that can break when the player takes damage, leaving the player defenseless and also dropping a shard (e.g. Glass Dagger).
+* **Breakable shovels**: Shovels that can break when the player takes damage, leaving the player unable to dig and also dropping a shard (e.g. Glass Shovel).
 * **Deadly items**: Items that kill the player if they get picked up. (The mod prevents such deaths when giving such items.)
 * **Banned items**: Items that the player normally cannot get.
 
 # Don't take...
 These settings restrict what items the mod can take away. All of these options have a "Take if given by mod" choice, which means that if the mod gave the item, it can take it away like normal, but if the item came from outside the mod, it is permanent.
 
-* **Potion**, **Lucky Charm**, **Crown of Greed**, and **Ring of Wonder**: The specific named items. This won't work on similar modded items.
+* **Potion**, **Lucky Charm**, **Crown of Greed**, **Ring of Wonder**, and **Crystal Shovel**: The specific named items. This won't work on similar modded items.
 * **Items locked to character**: If a character is supposed to keep an item, the mod shouldn't take it away.

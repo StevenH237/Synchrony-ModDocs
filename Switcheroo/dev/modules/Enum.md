@@ -25,12 +25,14 @@ Note: All names given are in English, but they are localizable.
 | `DEPTH_5_LEVEL_2`    |    0x20000 | 18th floor (5-2)             |                                                                                      |
 | `DEPTH_5_LEVEL_3`    |    0x40000 | 19th floor (5-3)             |                                                                                      |
 | `DEPTH_5_LEVEL_4`    |    0x80000 | 20th floor (5-4)             |                                                                                      |
-| `EXTRA_BOSS`         |  0x1000000 | Extra story boss             | For Cadence, Necrodancer. For Nocturna, The Conductor.                               |
+| `EXTRA_BOSS`         |  0x1000000 | Extra story boss             | Any final boss after 5-4 (4-4 non-amp).[†](#footnote-extraStoryBoss)                 |
 | `RAW_FLOOR_NUMBERS`  |  0x2000000 | Raw floor numbers above      | Treat the first 20 bits as raw floor numbers 1-20 instead of specific floors/depths. |
 | `TRAINING_FLOORS`    |  0x4000000 | Training floors              | Should the mod activate on training floors?                                          |
 | `EXTRA_BOSS_FLOORS`  | 0x10000000 | Add extra/custom boss floors | In a custom dungeon or custom zone, should the mod activate on boss floors?          |
 | `EXTRA_POST_BOSSES`  | 0x20000000 | Add extra post-boss floors   | In a custom dungeon or custom zone, should the mod activate after boss floors?       |
 | `EXTRA_OTHER_FLOORS` | 0x40000000 | Add other extra floors       | In a custom dungeon or custom zone, should the mod activate on other floors?         |
+
+<a id="footnote-extraStoryBoss"></a>† This applies to The NecroDancer in Cadence runs, The Conductor in Nocturna runs, and all but the first story boss in multi-char co-op runs.
 
 # `CharmsAlgorithm`: enum (sequence)
 Note: There used to be more entries here but they got removed. The enum still exists for future compatibility.
@@ -83,6 +85,13 @@ Note: There used to be more entries here but they got removed. The enum still ex
 | `SPELL`   |               10 |           0x200 | Spells           |                                                         |
 | `HOLSTER` |               11 |           0x400 | Holstered weapon |                                                         |
 | `SHIELD`  |               12 |           0x800 | Shield           | This is only available if the Synchrony DLC is enabled. |
+
+# `SlotMark`: enum (sequence)
+| Key        | Value | Description                                 |
+| :--------- | ----: | :------------------------------------------ |
+| `OPEN`     |     1 | This slot is open to receiving an item.     |
+| `TO_CLOSE` |     2 | This slot should be closed shortly.         |
+| `CLOSED`   |     3 | This slot is not open to receiving an item. |
 
 # `SlotPresets`: enum (sequence)
 | Key                      | Value | Name                                | Description                                     | Note                                                    |
