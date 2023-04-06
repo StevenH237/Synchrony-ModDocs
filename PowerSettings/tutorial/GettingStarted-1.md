@@ -209,6 +209,8 @@ Once you reopen the settings menu, the case dropdown should now look like this:
 
 ![Cases are better named](img/hello7.png)
 
+*(Note that if you use all-caps, which is enabled by default, this menu won't override that.)*
+
 # Setting settings
 When defining settings, there are a good number of things you can put between the braces. They're documented more thoroughly on [VortexBuffer's site](https://vortexbuffer.com/synchrony/docs/modules/necro.config.Settings/#class-SettingsArgs), but a quick gist is:
 * `id`: This should be a string with only alphanumeric characters and dots, and *must* be unique for all settings within a mod. The dots will come into play when we get into groups a little later. You shouldn't skip this. There are some circumstances in which you can skip this but it's generally bad practice to do so.

@@ -70,6 +70,24 @@ Event.levelLoad.add("settingsTest", { order = "entities" }, function(ev)
 end)
 ```
 
+# Submenus
+Settings are nice, but if they all have to go on one page, that page is going to get very crowded rather quickly. Fortunately, they *don't* have to. Introducing: Groups!
+
+When you create a group, it creates a submenu containing any setting whose ID starts with the group's, followed by a dot. For example, consider the following settings:
+
+* group `color`
+* number `color.red`
+* number `color.green`
+* enum `size`
+
+The `color.red` and `color.green` settings would be under the `color` group, and wouldn't show up in the main list - only the `color` group and `size` dropdown themselves would.
+
+Add the following code above the `-- EVENTS` block:
+
+```lua
+
+```
+
 # Action settings
 It's possible to make a settings menu entry that performs a function rather than changing a value. You can define the function anonymously within the setting definition, or externally earlier in the script. I'm going to go with the latter.
 
@@ -112,3 +130,5 @@ SayHello = Settings.shared.action {
 ```
 
 *(Be careful that you don't write `sayHello()` here; this may seem obvious if you're already familiar with Lua, and yet that's a mistake I make all the time.)*
+
+Now, rather than 
