@@ -1,7 +1,9 @@
 This is a central help guide for Nixill's Synchrony Mods.
 
 # How to reach Nixill
-The best way to reach me about my mods is to ping @Nixill#1370 in the `#mod-general` chat of [the Synchrony discord](https://discord.gg/qS88uUC9p2) (or the `#mod-help` chat if you're trying to make a mod using one of the libraries I've made).
+The best way to reach me about my mods is to ping Nixill in the `#mod-general` chat of [the Synchrony discord](https://discord.gg/qS88uUC9p2) (or the `#mod-help` chat if you're trying to make a mod using one of the libraries I've made).
+
+If you find an issue in one of the mods or would like to make a feature request, feel free to also submit an issue in that mod's GitHub page!
 
 # MenuMod
 MenuMod is an upcoming library mod! I'm making it to make mods presenting their own menus to players easier.
