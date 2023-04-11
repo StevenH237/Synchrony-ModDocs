@@ -17,11 +17,11 @@ NixLib is a library mod I made to not have to rewrite multiple functions across 
 
 * [mod.io](https://mod.io/g/crypt/m/NixLib)
 * [Documentation](NixLib/README.md)
-* [Source](https://github.com/StevenH237/Synchrony-NixLib) (issues and feature requests there please!)
+* [Source](https://github.com/StevenH237/Synchrony-NixLib)
 
 # Switcheroo
 Switcheroo is a mod that randomizes the player's build every floor.
 
 * [mod.io](https://mod.io/g/crypt/m/Switcheroo)
 * [Documentation](Switcheroo/README.md)
-* [Source](https://github.com/StevenH237/Synchrony-Switcheroo) (issues and feature requests there please!)
+* [Source](https://github.com/StevenH237/Synchrony-Switcheroo)
