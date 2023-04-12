@@ -19,6 +19,13 @@ NixLib is a library mod I made to not have to rewrite multiple functions across 
 * [Documentation](NixLib/README.md)
 * [Source](https://github.com/StevenH237/Synchrony-NixLib)
 
+# Spatial Distortions
+Spatial Distortions randomizes the order of the floors in a run.
+
+* [mod.io](https://mod.io/g/crypt/m/SpatialDistortions)
+* [Documentation](SpatialDistortions/README.md)
+* [Source](https://github.com/StevenH237/Synchrony-SpatialDistortions/)
+
 # Switcheroo
 Switcheroo is a mod that randomizes the player's build every floor.
 
