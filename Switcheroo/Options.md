@@ -18,7 +18,7 @@ This setting controls what floors the mod can activate on. It has the following 
 * **After every boss**: The mod will activate on the floor immediately following any boss.
   * For standard dungeons, this is the first floor of any zone, except the first zone.
 
-If none of these presets is shown, you likely loaded a ruleset that specifies a different set of floors. Pressing left or right on this option will switch to a preset, but you'll have to reload the ruleset to get back what it had.
+If none of these presets is shown, you likely loaded a ruleset that specifies a different set of floors. Opening the dropdown will allow you to switch to a preset, but you'll have to reload the ruleset to get back what it had.
 
 # Sell Items
 This setting controls whether or not items taken away by the mod are "sold" (if they have a buying price).
