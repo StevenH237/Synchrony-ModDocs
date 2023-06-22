@@ -10,6 +10,10 @@ If you find an issue in one of the mods or would like to make a feature request,
 ## Lola
 Lola is a character that has to pick up items indirectly.
 
+- [mod.io](https://mod.io/g/crypt/m/lola)
+- [Documentation](Lola/README.md)
+- [Source](https://github.com/StevenH237/Synchrony-Lola)
+
 ## Spatial Distortions
 Spatial Distortions randomizes the order of the floors in a run.
 
@@ -31,7 +35,7 @@ MenuMod is an upcoming library mod! I'm making it to make mods presenting their 
 
 * Not on mod.io yet
 * [Documentation](MenuMod/README.md)
-* Not on GitHub yet
+* [Source](https://github.com/StevenH237/Synchrony-MenuMod) (currently private)
 
 ## NixLib
 NixLib is a library mod I made to not have to rewrite multiple functions across multiple mods.
