@@ -7,6 +7,9 @@ If you find an issue in one of the mods or would like to make a feature request,
 
 # Gameplay mods
 
+## Lola
+Lola is a character that has to pick up items indirectly.
+
 ## Spatial Distortions
 Spatial Distortions randomizes the order of the floors in a run.
 
