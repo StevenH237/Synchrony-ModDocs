@@ -1,6 +1,6 @@
 Lola is a character who has to pick up items and activate shrines indirectly. Breaking normal low% rules results in death, while items may be collected by leaving them out.
 
-There are some [nuances](Nuance.md) to those rules that one may wish to read.
+There are some [nuances](Nuance.md) to those rules that one may wish to read, as well as some [strategy and hints](Strategy%20and%20hints.md).
 
 This documentation is up-to-date with version 1.0.3 of Lola, which is not yet public.
 
