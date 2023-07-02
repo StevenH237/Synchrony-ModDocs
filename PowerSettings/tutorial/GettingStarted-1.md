@@ -1,6 +1,6 @@
 The Synchrony settings API can be used to offer players varying degrees of customizability in your mods by adding options accessible through **Options → Mod Options → (your mod name here)** or **Customize → Custom Rules → Mod Options → (your mod name here)**.
 
-This walkthrough will introduce you to Synchrony's settings API. If you're already familiar with that, see [Conversion](Conversion.md) for a migration tutorial to PowerSettings!
+This walkthrough will introduce you to Synchrony's settings API. If you're already familiar with that, see [Conversion](./Conversion.md) for a migration tutorial to PowerSettings!
 
 To get started with using Settings, add the following to the top of your script (if it's not already present):
 
@@ -233,7 +233,7 @@ For string (text entry) settings:
 * `maxLength`: The highest number of characters you can fit in the string.
 
 # Continuing
-This is the end of part 1! The tutorial continues in [part 2](GettingStarted-2.md).
+This is the end of part 1! The tutorial continues in [part 2](./GettingStarted-2.md).
 
 <!--
 To get started with using PowerSettings, you'll first need to open your `mod.json`, find `"dependencies"`, and then add the following between the `{}`. (Note that if there's already something there, you'll need to separate this from that with a comma.)

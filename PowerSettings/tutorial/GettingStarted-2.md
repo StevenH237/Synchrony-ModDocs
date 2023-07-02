@@ -1,5 +1,5 @@
 # Existing code
-This tutorial builds on [part 1](GettingStarted-1.md). If you want to check your code or you chose to skip part 1, you can use the following:
+This tutorial builds on [part 1](./GettingStarted-1.md). If you want to check your code or you chose to skip part 1, you can use the following:
 
 ```lua
 local Event = require "necro.event.Event"

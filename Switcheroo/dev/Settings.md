@@ -1,4 +1,4 @@
-*Note: This page covers the settings nodes added by the mod. See [Settings](modules/Settings.md) for the Settings module or [Options](../../Options.md) for an end-user settings guide.*
+*Note: This page covers the settings nodes added by the mod. See [Settings](modules/Settings.md) for the Settings module or [Options](Switcheroo/Options.md) for an end-user settings guide.*
 
 # Shared settings (Customize)
 **ES** represents entity-schema-altering settings.

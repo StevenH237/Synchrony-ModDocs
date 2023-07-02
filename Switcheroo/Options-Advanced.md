@@ -1,6 +1,6 @@
 This is a simple guide to the options of Switcheroo.
 
-**Please [click here](Options.md) if you have "Show advanced settings" turned off!**
+**Please [click here](Switcheroo/Options.md) if you have "Show advanced settings" turned off!**
 
 # Replacement Chances
 These settings control the chances that items might be replaced, given, or removed.
