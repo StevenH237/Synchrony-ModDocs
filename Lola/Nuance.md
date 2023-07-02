@@ -1,5 +1,7 @@
 This page goes over some of the finer details of Lola's two rules.
 
+These statements assume you're playing Lola with default rules. As with any Nixill mod, there exist [Options](./Options.md) to change some rules.
+
 # Low% rules apply
 Lola will instantly die if they directly attempt to pick up any item or use any shrine.
 
@@ -8,6 +10,7 @@ Except:
 - If Lola breaks a Glass Shovel or a Glass weapon, they may pick up its shard without dying.
 - Lola may cause the Shrines of Fire, Pain, Sacrifice, and the Feast to become activated (though picking up the rewards is still deadly).
 - Like any other (vanilla, at least) character, Lola may pick up The Golden Lute.
+- For balance reasons, Lola may directly pick up Potions without any special handling. This does however break low%.
 
 Items that are safe for Lola to directly pick up are outlined in blue.
 
@@ -23,6 +26,7 @@ An item can count as revealed if it comes from...
 - Leprechaun or Thief
 - A chest, crate, barrel, or shrine Mimic
 - The peaceful gargoyles in zone 4
+- A Conjurer or Transmogrifier purchase
 
 The above are collectively known as "item storages", at least when they are actually holding an item.
 
