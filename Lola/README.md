@@ -4,7 +4,7 @@ There are some [nuances](./Nuance.md) to those rules that one may wish to read, 
 
 <!-- Coding a mod alongside Lola? You may be interested in reading about the [modules](./dev/modules/README.md), [components](./dev/Components.md), or [entities](./dev/Entities.md) that the mod provides. -->
 
-This documentation is up-to-date with version 1.1.0 of Lola.
+This documentation is up-to-date with version 1.1.5 of Lola.
 
 It's [open-source on GitHub](https://github.com/StevenH237/Synchrony-Lola)! You can [report problems or suggest features](https://github.com/StevenH237/Synchrony-Lola/issues) there too.
 

@@ -30,10 +30,23 @@ Functions the same as `add`, except that `holderPID` should be a player ID inste
 
 ---
 
+# `markSafe(item)`: boolean
+- `item` (Entity or integer): Either the entity table or the entity ID of the item to mark safe.
+
+⚠ This function will be implemented in the version after 1.1.5.
+
+Marks an item as safe-for-all, as if it were held by all players. Returns `true` if the change was made successfully, and `false` if nothing changed.
+
+`nil` is returned when the call fails, which can be caused by:
+- `item` does not exist.
+- `item` doesn't track holders (it doesn't have the `Lola_holders` component).
+
+---
+
 # `reset(item)`: table{integer=boolean}
 - `item` (Entity or integer): Either the entity table or the entity ID of the held item.
 
-Resets the list of holders on an item, clearing it except for the current holder (if any).
+Resets the list of holders on an item, clearing it except for the current holder (if any). Also clears any safe-for-all mark.
 
 Returns the previous list of holders, in the format `{[playerID] = true}`.
 
@@ -47,9 +60,9 @@ Returns the previous list of holders, in the format `{[playerID] = true}`.
 - `item` (Entity or integer): Either the entity table or the entity ID of the item to check.
 - `player` (Entity or integer): Either the entity table or the entity ID of the player to check against.
 
-Checks whether the given player has held the given item.
+Checks whether the given player has held the given item, or the item is marked safe-for-all.
 
-Returns `true` if they have, and `false` if they haven't.
+Returns `true` if they have or it is, and `false` otherwise.
 
 `nil` is returned when the call fails, which can be caused by:
 - `item` or `player` do not exist.
@@ -64,15 +77,17 @@ Returns `true` if they have, and `false` if they haven't.
 
 Functions the same as `check`, except that `playerID` should be a player ID instead of an entity ID or table.
 
+Notably, the call does not fail if an invalid `playerID` is specified, and will still return `true` for items marked safe-for-all.
+
 ---
 
 # `checkAllPIDs(item, playerIDs)`: boolean
 - `item` (Entity or integer): Either the entity table or the entity ID of the item to check.
 - `playerIDs` (integer\[\]): A list of player IDs to check against.
 
-Checks whether any of the given players have held the given item.
+Checks whether any of the given players have held the given item, or if the item is marked safe-for-all.
 
-Returns `true` if any have, and `false` if none have.
+Returns `true` if any have or it is, and `false` otherwise.
 
 `nil` is returned when the call fails, which can be caused by:
 - `item` does not exist
